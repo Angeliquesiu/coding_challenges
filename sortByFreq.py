@@ -11,10 +11,10 @@
 from collections import Counter
 
 def multiSortFreq(nums): 
-        counts = Counter(nums)
-        return sorted(nums, key = lambda x: (counts[x], -x))
+    counts = Counter(nums)
+    return sorted(nums, key = lambda x: (counts[x], -x))
         
 # option 2: one liner
 # every key call is O(n) complexity is O(n^2)
 def multiSortFreq2(self, nums):
-        return sorted(sorted(nums, reverse = 1), key = nums.count)
+    return sorted(sorted(nums, reverse = 1), key = nums.count)
