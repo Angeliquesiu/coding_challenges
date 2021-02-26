@@ -1,9 +1,18 @@
 # ALL VALUES OF LINKED LIST
 
+# ------------------------------------------
 # return all values in a linked list
 # convert binary number to integer
 
 # create linked list
+# A single node of a singly linked list
+class Node:
+  # constructor
+  def __init__(self, data = None, next = None): 
+    self.data = data
+    self.next = next
+
+# A Linked List class with a single head node
 class LinkedList:
   def __init__(self):  
     self.head = None
@@ -42,3 +51,7 @@ while node:
 
 # return binary number to decimal value
 print(int(s, 2))
+
+
+# ------------------------------------------
+# return 
